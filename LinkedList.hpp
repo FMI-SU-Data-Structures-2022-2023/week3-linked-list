@@ -22,14 +22,16 @@ class LinkedList {
         }
         LinkedList<T>& operator=(const LinkedList<T>& other) {
         }
-        void insertAtPos(T a, std::size_t pos) {
+        void insertAtPos(T a, std::size_t pos = 0) {
         }
         void removeAtPos(std::size_t pos) {
         }
-        T getElementAtPos(std::size_t pos) {
+        const T& getElementAtPos(unsigned pos) {
         }
         T& top() const {
         }
+		std::size_t getSize() {
+		}
         void sort() {
         }
 };
