@@ -43,7 +43,7 @@ class LinkedList {
 			friend bool operator!=(const Iterator& a, const Iterator& b) {
 				return a.current != b.current;
 			}
-			Node<T>*& operator*() const {}
+			T& operator*() const {}
 			Iterator& operator++() {}
 			Iterator operator++(int) {}
 		private:
