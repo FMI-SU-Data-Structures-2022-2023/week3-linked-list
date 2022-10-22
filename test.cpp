@@ -73,6 +73,6 @@ TEST_CASE("LinkedList removing elements") {
 		CHECK(list.getElementAtPos(4) == 100);
 		CHECK(list.getElementAtPos(5) == 1000);
 	}
-	// Adding operator ==, eq...
+	// Adding operator = for homework...
 	
 }
