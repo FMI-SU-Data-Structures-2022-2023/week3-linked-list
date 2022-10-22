@@ -9,7 +9,7 @@ class LinkedList {
             Node<G>* next;
             Node(G key) : key(key), next(nullptr){};
         };
-        Node<T>* begin;
+        Node<T>* front;
         size_t size;
     public:
         LinkedList() {
@@ -32,6 +32,23 @@ class LinkedList {
         }
 		std::size_t getSize() {
 		}
-        void sort() {
+        void sort() { // sort based on operator <
         }
+		struct Iterator { // can this be also class?
+			Iterator(): current(NULL){};
+			Iterator(Node<T>* _current) : current(_current){};
+			friend bool operator==(const Iterator& a, const Iterator& b) {
+				return a.current == b.current;
+			}
+			friend bool operator!=(const Iterator& a, const Iterator& b) {
+				return a.current != b.current;
+			}
+			Node<T>*& operator*() const {}
+			Iterator& operator++() {}
+			Iterator operator++(int) {}
+		private:
+			Node<T>* current;
+		};
+		Iterator begin() {return Iterator();}
+		Iterator end() {return Iterator();} // is there a way to know this value?
 };

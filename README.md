@@ -2,9 +2,9 @@
 
 * Реализирайте методите от LinkedList.hpp
 * Направете аналог за двойно свързан списък.
-* Реализирайте функция mapList(T highOrderFunction f,const LList object), която връща нов списък с обновени стойности.
-* Реализирайте функция filterList(bool highOrderFunction f,const LList object), която връща нов списък със стойностите, които изпълняват съответния булев израз.
-* Реализирайте функция mapEachK(LList& object, size_t k)
+* Реализирайте функция mapList(T highOrderFunction f,const LinkedList  object), която връща нов списък с обновени стойности.
+* Реализирайте функция filterList(bool highOrderFunction f,const LinkedList  object), която връща нов списък със стойностите, които изпълняват съответния булев израз.
+* Реализирайте функция removeEachK(LinkedList& object, size_t k) която премахма всеки К-ти елемент от свързания списък.
 * Реализирайте итератор за свързан списък.
 * Реализирайте итератор за двойно свързан списък.
 
