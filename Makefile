@@ -1,7 +1,7 @@
 all: a.out
 
 a.out:
-	g++ -std=c++17 test.cpp LinkedList.hpp
+	g++ -std=c++17 test.cpp
 
 test: a.out
 	./a.out
