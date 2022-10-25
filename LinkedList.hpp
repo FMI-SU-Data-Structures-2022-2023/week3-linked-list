@@ -35,7 +35,7 @@ class LinkedList {
         void sort() { // sort based on operator <
         }
 		struct Iterator { // can this be also class?
-			Iterator(): current(NULL){};
+			Iterator() : current(nullptr) {};
 			Iterator(Node<T>* _current) : current(_current){};
 			friend bool operator==(const Iterator& a, const Iterator& b) {
 				return a.current == b.current;
