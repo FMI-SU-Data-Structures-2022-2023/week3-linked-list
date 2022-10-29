@@ -12,7 +12,7 @@ TEST_CASE("LinkedList adding elements") {
 
 	SECTION("adding element should increase the size") {
 		list.insertAtPos(1, 0);
-		REQUIRE(list.getSize() == 0);
+		REQUIRE(list.getSize() == 1);
 	}
 
 	SECTION("adding element should increase the size") {
